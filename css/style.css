@@ -43,6 +43,7 @@ body{
   -moz-background-size: cover;
   -ms-background-size: cover;
   min-height: 809px;
+  height: 100%;
 }
 .header-top {
   margin-top:10em;
