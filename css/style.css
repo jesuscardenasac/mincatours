@@ -217,8 +217,8 @@ a.top-icon {
 }
 .services-section {
   text-align: center;
-  padding: 4em 0;
-  background: url(../images/type-bg.jpg) no-repeat 0px 0px;
+  padding: 8em 0;
+  background: url(../images/MincaTours.jpg) no-repeat 0px 0px;
   min-height: 750px;
   background-size: cover;
 }
@@ -849,7 +849,7 @@ p.banner-center {
 }
 .services-section {
   min-height: 600px;
-  padding: 3em 0;
+  padding: 6em 0;
 }
 .ser-bottom {
   margin-top: 3em;
@@ -1208,7 +1208,7 @@ p.banner-center {
 }
 .services-section {
   min-height: 600px;
-  padding: 2em 0;
+  padding: 4em 0;
 }
 .services-header h3 {
   font-size: 1.3em;
@@ -1422,7 +1422,7 @@ p.banner-center {
   font-size: 1.3em;
 }
 .services-section {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 .services-header h3 {
   font-size: 1.8em;
