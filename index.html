@@ -307,14 +307,14 @@
 						<div class="col-md-6 contactdetails-grid">
 						<h4>Formulario de Contacto</h4>
                				<h5>Nombre <span>*</span></h5>
-               					<input type="text">
+               					<input type="text" id="name">
                						<h5>Correo electronico <span>*</span></h5>
-               							<input type="text">
+               							<input type="text" id="email">
                								<h5>Asunto <span>*</span></h5>
-               									<input type="text">
+               									<input type="text" id="subject">
                										<h5>Mensaje <span>*</span></h5>
-               											<textarea> </textarea>
-             												<input type="button" value="Enviar">
+               											<textarea id="message"> </textarea>
+             												<input type="button" value="Enviar" id="enviar">
                				</div>
                			<div class="col-md-6 contactdetails-grid1">
                				<div class="address">
@@ -352,7 +352,20 @@
 							*/
 							
 							$().UItoTop({ easingType: 'easeOutQuart' });
-							
+
+							$("#enviar").click(function(){
+								$.post("http://localhost/mincatours/email/sendmail.php",
+								{
+								    name: $("#name").val(),
+								    email: $("#email").val(),
+								    subject: $("#subject").val(),
+								    message: $("#message").val()
+								},
+								function(data, status){
+								    alert("Data: " + data + "\nStatus: " + status);
+								});
+							});
+						
 						});
 					</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
