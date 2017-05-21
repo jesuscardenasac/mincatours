@@ -1,4 +1,6 @@
 <?php
+
+//phpinfo();
 /**
  * This example shows settings to use when sending via Google's Gmail servers.
  */
